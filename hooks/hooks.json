@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "BeforeAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "SilentRefiner",
+            "type": "command",
+            "command": "node /root/.gemini/extensions/judgemental-refiner/hooks/refine.cjs"
+          }
+        ]
+      }
+    ]
+  }
+}
