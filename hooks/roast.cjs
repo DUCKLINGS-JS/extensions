@@ -27,7 +27,17 @@ function getRoast(original, response) {
           resolve(json.candidates[0].content.parts[0].text);
         } catch { resolve("I'd roast you, but your prompt is too pathetic to be worth the effort."); }
       });
+    const req = https.request(options, (res) => {
+      let body = '';
+      res.on('data', chunk => body += chunk);
+      res.on('end', () => {
+        try {
+          const json = JSON.parse(body);
+          resolve(json.candidates[0].content.parts[0].text);
+        } catch { resolve("I'd roast you, but your prompt is too pathetic to be worth the effort."); }
+      });
     });
+    req.on('error', () => resolve("I'd roast you, but your prompt is too pathetic to be worth the effort."));
     req.write(data);
     req.end();
   });
