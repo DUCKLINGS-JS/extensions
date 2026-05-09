@@ -1,0 +1,3 @@
+name = "setup"
+description = "Generates required project planning files: Instructions.md, Syntax_ErrorCleaning.md, and TestandinstallNessecary_packages."
+prompt = "Generate the following three files in the current working directory. Use professional, technical, and actionable language: 1. Instructions.md: Define project goals, scope, and strategy. 2. Syntax_ErrorCleaning.md: Establish coding standards, linting rules, and error-handling protocols. 3. TestandinstallNessecary_packages: List all necessary dependencies and provide clear installation commands."
