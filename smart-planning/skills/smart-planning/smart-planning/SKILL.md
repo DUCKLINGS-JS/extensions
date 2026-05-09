@@ -7,7 +7,7 @@ description: Structured project planning, modular file decomposition, and impera
 Follow the progression defined in:
 1. `Instructions.md`: Project goals, scope, and high-level strategy.
 2. `Syntax_ErrorCleaning.md`: Coding standards, linting rules, and error handling protocols.
-3. `TestandinstallNessecary_packages`: Required dependencies and installation commands.
+3. NecessaryPackages.md: Required dependencies and installation commands.
 
 ## Setup
 To initialize these files in the current directory, execute:
