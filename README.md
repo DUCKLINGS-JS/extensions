@@ -1,6 +1,6 @@
 # extensions
 
---List of extensions
+## List of extensions
 **Judgemental Refiner:**
 Refines the prompt
 **smart-planning:**
