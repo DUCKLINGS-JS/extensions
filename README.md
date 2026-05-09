@@ -7,4 +7,9 @@ Refines the prompt
 Plans using multiple files and a tracker for optimal usage
 
 ## Installation
-gh repo clone DUCKLINGS-JS/extensions
+``curl https://github.com/DUCKLINGS-JS/extensions/smart-planning``
+
+``curl https://github.com/DUCKLINGS-JS/extensions/judgemental-refiner``
+
+Or
+``gh repo clone DUCKLINGS-JS/extensions``
