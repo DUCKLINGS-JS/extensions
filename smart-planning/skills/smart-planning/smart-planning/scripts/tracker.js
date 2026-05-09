@@ -21,7 +21,7 @@ function getProgress(folderName) {
     const totalSteps = Math.max(...numbers);
     
     // Count how many steps are actually marked as 'done'
-    const completedSteps = files.filter(f => f.toLowerCase().includes('done')).length;
+    const completedSteps = files.filter(f => f.toLowerCase().includes('done') && !f.toLowerCase().includes('not-done')).length;
     
     const percent = Math.round((completedSteps / totalSteps) * 100);
     return `${percent}% (${completedSteps}/${totalSteps} steps completed) - Folder: ${folderName}`;
